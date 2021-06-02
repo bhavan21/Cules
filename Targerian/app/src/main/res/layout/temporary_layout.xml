@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <!-- insert chat message here !-->
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#000" />
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <!--//next chat message -->
+
+           </TableRow>
+       </TableLayout>
+   </ScrollView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="fill_parent"
+       android:layout_weight="9"
+       android:orientation="horizontal" >
+
+       <EditText
+           android:id="@+id/chatLine"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:hint="Say:"
+           android:imeOptions="actionSend"
+           android:singleLine="true" />
+   </LinearLayout>
+
+</LinearLayout>
